@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "TTNorms";
+  src: url("~@/assets/fonts/TTNorms-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TTNorms";
+  src: url("~@/assets/fonts/TTNorms-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "TTNorms";
+  src: url("~@/assets/fonts/TTNorms-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:hover,
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #474E54;
+  font-family: "TT Norms";
+}
+
+.space {
+  flex-grow: 1;
+}
+
+.date {
+  font-size: 10px;
+}
+
+.rotate {
+  animation: rotate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
